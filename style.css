@@ -1,0 +1,58 @@
+html {
+    font-size: 12px;
+}
+
+body {
+    margin: 0;
+    font-size: 14px;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    background: #000;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: -1;
+}
+
+/* %, vh, vw, em, rem  */
+.box-rel {
+    font-size: 10px;
+    height: 20em;
+    width: 20rem;
+    background: blue;
+    color: white;
+}
+
+.static>div:first-child {
+    top: 12px;
+    left: 120px;
+}
+
+.relative>div:nth-child(2) {
+    position: relative;
+    top: 12px;
+    right: 12px;
+}
+
+.position {
+    position: relative;
+}
+
+.absolute>div:nth-child(2) {
+    position: absolute;
+    top: 0;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.sticky>div:nth-child(2) {
+    position: sticky;
+    top: 20px;
+}
